@@ -24,7 +24,7 @@ function LIGHT({globalSwitch}) {
           <img src={imgPath} style={{height:'100px',width:'100px'}}/>
           <div>
             <button onClick={toggleLight}>
-               Toggle Light
+               {globalSwitch ? "Locked on": "Toggle Light"}
             </button>
           </div>
         </div>

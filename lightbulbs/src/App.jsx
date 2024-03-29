@@ -28,7 +28,7 @@ export function MASTERSWITCH(){
   return (
     <div>
       <h1>These are Lightbulbs</h1>
-      <button onClick={toggleLights}>This is the MasterButton</button>
+      <button onClick={toggleLights}>{isGlobalOn ? "Turn off all lights": "Lock lights on \"ON\""}</button>
       <div className='SwitchBox'>
         <LIGHT globalSwitch = {isGlobalOn}/>
         <LIGHT  globalSwitch = {isGlobalOn}/>
