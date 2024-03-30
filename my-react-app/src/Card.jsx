@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const clownPic = "./src/assets/Sad_Clown.png"
 
 function Card(){
