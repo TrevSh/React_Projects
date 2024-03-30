@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react' 
 
 function LIGHT({globalSwitch}) {
     const LIGHT_OFF = './src/assets/light_off.jpg'
@@ -12,11 +12,10 @@ function LIGHT({globalSwitch}) {
     }, [globalSwitch]);
 
     const toggleLight = () => {
-        console.log("Toggled")
         if(!globalSwitch){
             const newPath = imgPath === LIGHT_ON ? LIGHT_OFF : LIGHT_ON
             setImgPath(newPath);
-    }
+        }
 }
 
     return (
