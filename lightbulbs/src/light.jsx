@@ -11,7 +11,7 @@ function LIGHT({globalSwitch}) {
             setImgPath(globalSwitch ? LIGHT_ON : LIGHT_OFF);
     }, [globalSwitch]);
 
-    const toggleLight = () => {
+    const handleLight = () => {
         if(!globalSwitch){
             const newPath = imgPath === LIGHT_ON ? LIGHT_OFF : LIGHT_ON
             setImgPath(newPath);
@@ -22,7 +22,7 @@ function LIGHT({globalSwitch}) {
         <div className="card">
           <img src={imgPath} style={{height:'100px',width:'100px'}}/>
           <div>
-            <button onClick={toggleLight}>
+            <button onClick={handleLight}>
                {globalSwitch ? "Locked on": "Toggle Light"}
             </button>
           </div>

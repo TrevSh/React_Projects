@@ -17,6 +17,9 @@ const LIGHT_ON = './src/assets/light_on.png'
   //A prop is a passable varibale
   //WATCH YOUTUBE VIDEO IN EMAIL FROM TYLER
 
+  //NOTE: I've studies alot since this practice so i believe I could do this
+  //better. I wouldve never renamed App 
+
 export function MASTERSWITCH(){
   const [isGlobalOn, setGlobalSwitch] = useState(false);
 
